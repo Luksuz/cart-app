@@ -28,7 +28,7 @@ function appendItemToDOM(item) {
     let newItem = document.createElement('li');
     newItem.textContent = itemValue;
 
-    newItem.addEventListener('mousedown', () => {
+    newItem.addEventListener('mouseup', () => {
         remove(ref(db, 'shoppingList/' + itemID));
     })
     itemsEl.append(newItem)
