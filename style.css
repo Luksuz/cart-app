@@ -1,5 +1,7 @@
 body{
+    height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 div{
@@ -18,10 +20,6 @@ input{
     transition: all 0.3s ease;
 }
 
-.buttons{
-    display: inline-flex;
-}
-
 button{
     padding: 10px;
     border-radius: 10px;
@@ -30,7 +28,6 @@ button{
     outline: none;
     transition: all 0.3s ease;
     cursor: pointer;
-    width: 40%;
 }
 
 ul{
@@ -49,4 +46,14 @@ li{
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: #c36868;
+    border-radius: 10px;
 }
